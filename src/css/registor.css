@@ -1,0 +1,47 @@
+/* 头部css start */
+
+.pcbar {
+    height: 90px
+}
+
+.pcbar__bd {
+    width: 1200px;
+    margin: 0 auto;
+    height: 90px
+}
+
+.pcbar__bd__logo img {
+    float: left;
+    *display: inline;
+    margin-top: 24px;
+    width: 108px;
+    height: 48px
+}
+
+.pcbar__bd__btn {
+    float: right;
+    *display: inline;
+    margin-top: 24px;
+    width: 121px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+}
+
+.pcbar__bd__btn:hover {
+    text-decoration: none
+}
+
+
+/* 头部 css end */
+
+
+/* 主体部分 css start */
+
+
+/* 主体部分 css end */

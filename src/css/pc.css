@@ -1,0 +1,20 @@
+.zebra-dm-pc-register .register {
+    width: 1200px;
+    height: 500px;
+    background: #f8f8f8;
+    padding-top: 40px;
+    margin: 0 auto
+}
+
+.zebra-dm-pc-register .register.en {
+    margin-left: 400px
+}
+
+.zebra-dm-pc-register .register iframe {
+    width: 100%;
+    background: #fff
+}
+
+.zebra-dm-pc-register .marathon {
+    background: #fff
+}
