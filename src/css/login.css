@@ -51,7 +51,7 @@ body {
 }
 
 #tab .tab_title {
-    height: 30px;
+    height: 38px;
     background: #ccc;
 }
 
@@ -60,11 +60,14 @@ body {
 }
 
 #tab .tab_title li a {
+    height: 38px;
     text-decoration: none;
     width: 113px;
     text-align: center;
-    line-height: 30px;
+    line-height: 38px;
     display: block;
+    color: #ff1268;
+    font-weight: 700
 }
 
 #tab .tab_content {
@@ -76,7 +79,8 @@ body {
 }
 
 #tab .tab_title li.active {
-    background: red;
+    background: #fff;
+    color: #ff1268;
 }
 
 #tab .tab_content .item {
@@ -120,7 +124,7 @@ body {
 }
 
 #tab1 .tab_title li.active {
-    background: red;
+    background: #fff;
 }
 
 #tab1 .tab_content .item {

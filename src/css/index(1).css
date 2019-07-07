@@ -260,7 +260,8 @@ ul {
     display: flex;
     position: relative;
     margin-bottom: 20px;
-    font-size: 14px
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 .fm-field .fm-label-icon .iconfont {
@@ -268,11 +269,13 @@ ul {
 }
 
 .fm-field .fm-text {
+    width: 300px;
     border: 1px solid #ccc;
     height: 42px;
     outline: none;
     font-size: 14px;
-    padding-left: 50px
+    padding-left: 50px;
+    margin-left: 0px;
 }
 
 .fm-field.fm-field-mobile .fm-text {
@@ -294,7 +297,7 @@ ul {
 
 .fm-text:focus,
 .fm-text:hover {
-    border-color: #ff9000
+    border-color: #ff1268
 }
 
 .login-label-text .fm-btn {
@@ -351,10 +354,11 @@ ul {
 }
 
 .fm-button {
-    background-color: #ff9000;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ff9000), to(#ff9000));
-    background-image: linear-gradient(90deg, #ff9000, #ff9000);
-    border: 1px solid #ff9000;
+    font-family: '微软雅黑';
+    background-color: #ff1268;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff1268), to(#ff1268));
+    background-image: linear-gradient(90deg, #ff1268, #ff1268);
+    border: 1px solid #ff1268;
     border-radius: 3px;
     font-size: 20px;
     height: 42px;
@@ -401,7 +405,7 @@ ul {
 }
 
 .nc-outer-box {
-    padding-top: 2px
+    padding-top: 20px
 }
 
 .width-vertical {
@@ -604,7 +608,7 @@ body.pc .phone-code-selector-arrow-hide.phone-code-select+.input-wrap-sms-logini
 }
 
 .login-blocks {
-    margin: 8px 0;
+    margin: 0;
     text-align: right;
     zoom: 1
 }
