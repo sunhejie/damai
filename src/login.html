@@ -5,165 +5,236 @@
     <meta name="spm-id" content="a211mg.12805697">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" href="../src/img/TB1RxAHSmrqK1RjSZK9XXXyypXa-16-16.ico" type="image/x-icon">
-
     <title>大麦登录</title>
-    <link rel="stylesheet" href="../src/css/pc.css" />
-    <script>
-        window.g_config = window.g_config || {};
-        window.g_config.loadedCss = window.g_config.loadedCss || [];
-        window.g_config.loadedCss = ["../src/css/pc.css"];
-    </script>
+    <link rel="shortcut icon" href="../src/img/TB1RxAHSmrqK1RjSZK9XXXyypXa-16-16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/index(1).css" />
+    <link rel="stylesheet" href="../src/css/damai.css" />
+    <link rel="stylesheet" href="../src/css/registor.css">
+    <link rel="stylesheet" href="../src/css/login.css">
+    <link rel="stylesheet" href="../src/css/login.css">
+    <!-- 控制底部 css-->
+
+
 </head>
 
 <body>
-    <style>
-        #container input {
-            font-size: 14px;
-            border-radius: 3px;
-            padding: 0 12px;
-            border: 1px solid #c4c6cf;
-            background-color: #fff;
-            height: 38px;
-            padding: 0 12px;
-            font-size: 14px;
-        }
-        
-        #container p {
-            line-height: 60px;
-            font-size: 14px;
-            color: #666666;
-            margin-left: 250px
-        }
-    </style>
-    <!-- 控制头部 css-->
-    <link rel="stylesheet" href="../src/css/registor.css">
-    <!-- 控制底部 css-->
-    <link rel="stylesheet" href="../src/css/footer.css">
-    <link rel="stylesheet" href="../src/css/index-min.css">
-    <link rel="stylesheet" href="../src//css/style.css">
-
-
-    <body>
-        <!-- 头部 -->
-        <div class="pcbar">
-            <div class="pcbar__bd w1200">
-                <a href="../src/index.html" class="pcbar__bd__logo">
-                    <img src="../src/img/loge.png">
-                </a>
-                <a href="javascript:;" target="_blank" class="pcbar__bd__btn">English</a>
-            </div>
-        </div>
-        <!-- 头部结束 -->
-        <!-- 主要部分 -->
-
-        <div class="login">
-            <a class="ad">
-                <img src="../src/img/TB1NkOydrus3KVjSZKbXXXqkFXa-720-400.png_q75.png" alt="">
+    <!-- 头部 -->
+    <div class="pcbar">
+        <div class="pcbar__bd w1200">
+            <a href="../src/index.html" class="pcbar__bd__logo">
+                <img src="../src/img/loge.png">
             </a>
-            <div id="alibaba-login-iframe" class="iframe-loaded">
-                <div id="alibaba-login-iframe-loading"></div>
-                <iframe id="alibaba-login-box" src="//ipassport.damai.cn/mini_login.htm?lang=zh_cn&amp;appName=damai&amp;appEntrance=default&amp;styleType=vertical&amp;bizParams=&amp;notLoadSsoView=true&amp;notKeepLogin=false&amp;isMobile=false&amp;showSnsLogin=false&amp;regUrl=%2F%2Fpassport.damai.cn%2Fregister&amp;plainReturnUrl=%2F%2Fpassport.damai.cn%2Flogin&amp;returnUrl=https%3A%2F%2Fpassport.damai.cn%2Fdologin.htm%3FredirectUrl%3Dhttps%25253A%25252F%25252Fwww.damai.cn%25252F%25253Futm_source%25253Dsearch%252526utm_medium%25253Dbaidupc%252526utm_content%25253Dpmarket_yhcpyyb%252526utm_campaign%25253Dalink_bdsem_hzh_shouye_0789%26platform%3D106002&amp;rnd=0.3280541594943238"
-                    width="350" height="339" frameborder="none" scrolling="no" style="border: none;"></iframe></div>
+            <a href="javascript:;" target="_blank" class="pcbar__bd__btn">English</a>
         </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 主要部分 -->
+    <div class="main">
+        <div class="login">
+            <div class="ad">
+                <a>
+                    <img src="../src/img/TB1NkOydrus3KVjSZKbXXXqkFXa-720-400.png_q75.png" alt="">
+                </a>
+            </div>
 
-        <!-- 底部 -->
-        <div class="dm-footer">
-            <div class="w1200" style="width: 1200px; margin: 20px auto 0 auto;">
-                <ul class="footer__links">
+            <div id="tab">
+                <div class="tab_title">
+                    <ul>
+                        <li class="active"><a href="javascript:;">密码登录</a></li>
+                        <li><a href="javascript:;">短信登录</a></li>
+                        <li><a href="javascript:;">扫码登录</a></li>
 
-                    <li class="footer__links__list"><a href="//help.damai.cn" target="_blank" data-spm="flink0">帮助中心</a></li>
-                    <li class="footer__links__grep">|</li>
+                    </ul>
+                </div>
+                <div class="tab_content">
 
-                    <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=69&amp;categoryId=30" target="_blank" data-spm="flink1">公司介绍</a></li>
-                    <li class="footer__links__grep">|</li>
+                    <div class="item show123">
+                        <div class="login-content nc-outer-box">
+                            <div class="login-password">
+                                <form id="login-form" class="login-form">
+                                    <div class="fm-field">
+                                        <div><label class="fm-label-icon"><i class="icon-user iconfont" title="用户名"></i></label></div>
+                                        <div class="input-plain-wrap input-wrap-loginid "><input type="text" class="fm-text" id="fm-login-id" tabindex="1" aria-label="请输入手机号或邮箱" placeholder="请输入手机号或邮箱" autocapitalize="off"></div>
+                                    </div>
+                                    <div class="fm-field">
+                                        <div><label class="fm-label-icon"><i class="icon-pwd iconfont" title="请输入登录密码"></i></label></div>
+                                        <div class="input-plain-wrap input-wrap-password"><input type="password" class="fm-text" id="fm-login-password" tabindex="2" aria-label="请输入登录密码" placeholder="请输入登录密码" maxlength="40" autocomplete="off" autocapitalize="off"></div>
+                                    </div>
+                                    <div>
+                                        <div id="nocaptcha-password" class="nc-container tb-login" style="display: none;" data-nc-idx="1">
+                                            <div id="nc_1_wrapper" class="nc_wrapper">
+                                                <div id="nc_1_n1t" class="nc_scale">
+                                                    <div id="nc_1__bg" class="nc_bg"></div>
+                                                    <span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
+                                                    <div id="nc_1__scale_text" class="scale_text slidetounlock"><span class="nc-lang-cnt" data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
+                                                    <div id="nc_1_clickCaptcha" class="clickCaptcha">
+                                                        <div class="clickCaptcha_text">
+                                                            <b id="nc_1__captcha_text" class="nc_captch_text"></b>
+                                                            <i id="nc_1__btn_2" class="nc_iconfont nc_btn_2 btn_refresh"></i>
+                                                        </div>
+                                                        <div class="clickCaptcha_img"></div>
+                                                        <div class="clickCaptcha_btn"></div>
+                                                    </div>
+                                                    <div id="nc_1_imgCaptcha" class="imgCaptcha">
+                                                        <div class="imgCaptcha_text"><input id="nc_1_captcha_input" maxlength="6" type="text" style="ime-mode:disabled"></div>
+                                                        <div class="imgCaptcha_img" id="nc_1__imgCaptcha_img"></div>
+                                                        <i id="nc_1__btn_1" class="nc_iconfont nc_btn_1 btn_refresh" onclick="document.getElementById('nc_1__imgCaptcha_img').children[0].click()"></i>
+                                                        <div class="imgCaptcha_btn">
+                                                            <div id="nc_1__captcha_img_text" class="nc_captcha_img_text"></div>
+                                                            <div id="nc_1_scale_submit" class="nc_scale_submit"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="nc_1_cc" class="nc-cc"></div>
+                                                    <i id="nc_1__voicebtn" tabindex="0" role="button" class="nc_voicebtn nc_iconfont" style="display:none"></i>
+                                                    <b id="nc_1__helpbtn" class="nc_helpbtn"><span class="nc-lang-cnt" data-nc-lang="_learning">了解新功能</span></b>
+                                                </div>
+                                                <div id="nc_1__voice" class="nc_voice"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fm-btn"><button type="submit" tabindex="3" class="fm-button fm-submit password-login">登录</button></div>
 
-                    <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=70&amp;categoryId=30" target="_blank" data-spm="flink2">品牌识别</a></li>
-                    <li class="footer__links__grep">|</li>
-
-                    <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=72&amp;categoryId=30" target="_blank" data-spm="flink3">公司大事记</a></li>
-                    <li class="footer__links__grep">|</li>
-
-                    <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=40&amp;categoryId=14" target="_blank" data-spm="flink4">协议及隐私权政策</a></li>
-                    <li class="footer__links__grep">|</li>
-
-                    <li class="footer__links__list"><a href="//jubao.alibaba.com/internet/readme.htm?spm=a2o6e.search.0.0.72f44d15Votov6&amp;site=damai" target="_blank" data-spm="flink5">廉正举报</a></li>
-                    <li class="footer__links__grep">|</li>
-
-                    <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=58&amp;categoryId=5" target="_blank" data-spm="flink6">联系合作</a></li>
-                    <li class="footer__links__grep">|</li>
-
-                    <li class="footer__links__list"><a href="//job.alibaba.com/zhaopin/positionList.htm?keyWord=JXU1OTI3JXU5RUE2&amp;_input_charset=UTF-8" target="_blank" data-spm="flink7">招聘信息</a></li>
-                    <li class="footer__links__grep">|</li>
-
-                    <li class="footer__links__list"><a href="//x.damai.cn/markets/special/fangzhapian?spm=a2o6e.home.0.0.75df48d3hqGWGD&amp;wh_ttid=pc" target="_blank" data-spm="flink8">防骗秘籍</a></li>
-
-
-                </ul>
-                <div class="footer__ft">
-                    <div class="footer__ft_fl">
-                        <a href="//www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B" target="_blank" class="footer__ft__logo">
-                            <img src="../src/img/bigloge.png">
-                        </a>
-                        <div class="footer__ft__code__box">
-                            <img class="footer__ft__code" src="../src/img/erweima.jpg" alt="">
-                            <span>APP下载</span>
+                                    <div class="login-blocks login-links"><a href="https://ipassport.damai.cn/ac/password_find.htm?lang=zh_CN&amp;appName=damai&amp;fromSite=18&amp;call_back_url=%2F%2Fpassport.damai.cn%2Flogin" target="_blank" class="">忘记密码</a><a href="//passport.damai.cn/register"
+                                            target="_blank" class="">免费注册</a></div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__ft_fr">
-                        <div class="footer__fr__contact">
+                    <div class="item">
+                        <ul>
+                            <li>社会退休人员去世后 亲属可领4笔钱！推荐</li>
+                            <li>社会4月份开始 这一批新规将陆续施行 焦点</li>
+                            <li>社会山东德州前首富政府大楼里被抓热议</li>
+                            <li>社会共享单车涨价！小蓝、摩拜已宣布关注</li>
+                            <li>社会这起女孩劫持案 曝光中国神秘部队热门</li>
+                            <li>社会特朗普最近这个决定 会让世界大乱国际</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="../src/img1/597238920905.jpg" alt="">
+                    </div>
 
-                            <a style="margin-left:0;" href="//online.damai.cn/alime/toalime?from=damai_itemdetail&amp;page=header_service" class="footer__fr__contact__btn alime">在线客服</a>
-                        </div>
-                        <ul class="footer__ft__words">
-                            <li class="footer__ft__certificate"><a href="http://www.miitbeian.gov.cn?spm=a2o6e.home.0.0.5b4d48d3mVzb2Z" target="_blank">京ICP证031057号</a></li>
-                            <li class="footer__ft__grep">|</li>
-                            <li class="footer__ft__certificate"><a href="http://www.miitbeian.gov.cn" target="_blank">京ICP备11043884号</a></li>
-                            <li class="footer__ft__grep">|</li>
-                            <li class="footer__ft__certificate"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037341" target="_blank">京公网安备11010502037341号</a>
-                            </li>
-                            <li class="footer__ft__grep">|</li>
-                            <li class="footer__ft__certificate"><a href="//img.alicdn.com/tfs/TB1K9r6xN9YBuNjy0FfXXXIsVXa-1152-799.jpg" target="_blank">广播电视节目制作经营许可证
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="dm-footer">
+        <div class="w1200" style="width: 1200px; margin: 20px auto 0 auto;">
+            <ul class="footer__links">
+
+                <li class="footer__links__list"><a href="//help.damai.cn" target="_blank" data-spm="flink0">帮助中心</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=69&amp;categoryId=30" target="_blank" data-spm="flink1">公司介绍</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=70&amp;categoryId=30" target="_blank" data-spm="flink2">品牌识别</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=72&amp;categoryId=30" target="_blank" data-spm="flink3">公司大事记</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=40&amp;categoryId=14" target="_blank" data-spm="flink4">协议及隐私权政策</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//jubao.alibaba.com/internet/readme.htm?spm=a2o6e.search.0.0.72f44d15Votov6&amp;site=damai" target="_blank" data-spm="flink5">廉正举报</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//help.damai.cn/helpPage.htm?pageId=58&amp;categoryId=5" target="_blank" data-spm="flink6">联系合作</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//job.alibaba.com/zhaopin/positionList.htm?keyWord=JXU1OTI3JXU5RUE2&amp;_input_charset=UTF-8" target="_blank" data-spm="flink7">招聘信息</a></li>
+                <li class="footer__links__grep">|</li>
+
+                <li class="footer__links__list"><a href="//x.damai.cn/markets/special/fangzhapian?spm=a2o6e.home.0.0.75df48d3hqGWGD&amp;wh_ttid=pc" target="_blank" data-spm="flink8">防骗秘籍</a></li>
+
+
+            </ul>
+            <div class="footer__ft">
+                <div class="footer__ft_fl">
+                    <a href="//www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B" target="_blank" class="footer__ft__logo">
+                        <img src="../src/img/bigloge.png">
+                    </a>
+                    <div class="footer__ft__code__box">
+                        <img class="footer__ft__code" src="../src/img/erweima.jpg" alt="">
+                        <span>APP下载</span>
+                    </div>
+                </div>
+                <div class="footer__ft_fr">
+                    <div class="footer__fr__contact">
+
+                        <a style="margin-left:0;" href="//online.damai.cn/alime/toalime?from=damai_itemdetail&amp;page=header_service" class="footer__fr__contact__btn alime">在线客服</a>
+                    </div>
+                    <ul class="footer__ft__words">
+                        <li class="footer__ft__certificate"><a href="http://www.miitbeian.gov.cn?spm=a2o6e.home.0.0.5b4d48d3mVzb2Z" target="_blank">京ICP证031057号</a></li>
+                        <li class="footer__ft__grep">|</li>
+                        <li class="footer__ft__certificate"><a href="http://www.miitbeian.gov.cn" target="_blank">京ICP备11043884号</a></li>
+                        <li class="footer__ft__grep">|</li>
+                        <li class="footer__ft__certificate"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037341" target="_blank">京公网安备11010502037341号</a>
+                        </li>
+                        <li class="footer__ft__grep">|</li>
+                        <li class="footer__ft__certificate"><a href="//img.alicdn.com/tfs/TB1K9r6xN9YBuNjy0FfXXXIsVXa-1152-799.jpg" target="_blank">广播电视节目制作经营许可证
                                 (京)字第02253号</a></li>
-                        </ul>
-                        <ul class="footer__ft__words">
-                            <li class="footer__ft__certificate"><a href="//img.alicdn.com/tfs/TB1AsH4xH9YBuNjy0FgXXcxcXXa-1420-1032.jpg" target="_blank">网络文化经营许可证
+                    </ul>
+                    <ul class="footer__ft__words">
+                        <li class="footer__ft__certificate"><a href="//img.alicdn.com/tfs/TB1AsH4xH9YBuNjy0FgXXcxcXXa-1420-1032.jpg" target="_blank">网络文化经营许可证
                                 京网文[2016]3438-413号</a></li>
-                            <li class="footer__ft__grep">|</li>
-                            <li class="footer__ft__certificate"><a href="//img.alicdn.com/tfs/TB1DfD6CxGYBuNjy0FnXXX5lpXa-1079-1527.jpg" target="_blank">营业性演出许可证
+                        <li class="footer__ft__grep">|</li>
+                        <li class="footer__ft__certificate"><a href="//img.alicdn.com/tfs/TB1DfD6CxGYBuNjy0FnXXX5lpXa-1079-1527.jpg" target="_blank">营业性演出许可证
                                 京市演587号</a></li>
-                        </ul>
-                        <ul class="footer__ft__words">
-                            <li class="footer__ft__certificate">北京红马传媒文化发展有限公司 版权所有</li>
-                            <li class="footer__ft__certificate"><a href="//www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B">大麦网</a></li>
-                            <li>Copyright 2003-2018 All Rights Reserved</li>
-                        </ul>
-                        <ul class="footer__ft__words">
-                            <li>举报投诉邮箱：damai_tousu@member.alibaba.com</li>
-                        </ul>
-                        <div class="footer__ft__img">
-                            <a href="javascript:;" target="_blank">
-                                <img style="cursor:pointer;cursor:hand" class="footer__ft__img1" src="../src/img/1.gif" onclick="verifySeal();" alt="SSL site seal - click to verify" data-spm-anchor-id="a2o6e.home.0.i1.5b4d48d3mVzb2Z">
-                            </a>
-                            <a rel="nofollow" title="电子营业执照" target="_blank" href="javascript:;">
-                                <img class="footer__ft__img2" alt="" src="../src/img/2.png">
-                            </a>
+                    </ul>
+                    <ul class="footer__ft__words">
+                        <li class="footer__ft__certificate">北京红马传媒文化发展有限公司 版权所有</li>
+                        <li class="footer__ft__certificate"><a href="//www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B">大麦网</a></li>
+                        <li>Copyright 2003-2018 All Rights Reserved</li>
+                    </ul>
+                    <ul class="footer__ft__words">
+                        <li>举报投诉邮箱：damai_tousu@member.alibaba.com</li>
+                    </ul>
+                    <div class="footer__ft__img">
+                        <a href="javascript:;" target="_blank">
+                            <img style="cursor:pointer;cursor:hand" class="footer__ft__img1" src="../src/img/1.gif" onclick="verifySeal();" alt="SSL site seal - click to verify" data-spm-anchor-id="a2o6e.home.0.i1.5b4d48d3mVzb2Z">
+                        </a>
+                        <a rel="nofollow" title="电子营业执照" target="_blank" href="javascript:;">
+                            <img class="footer__ft__img2" alt="" src="../src/img/2.png">
+                        </a>
 
-                            <a rel="nofollow" target="_blank" href="javascript:;">
-                                <img src="../src/img/3.png" class="footer__ft__img3">
-                            </a>
-                            <a rel="nofollow" target="_blank" href="javascript:;">
-                                <img src="../src/img/4.png" class="footer__ft__img4w">
-                            </a>
-                            <a target="_blank" href="javascript:;" id="___szfw_logo___">
-                                <img class="footer__ft__img4" src="../src/img/5.png">
-                            </a>
-                        </div>
+                        <a rel="nofollow" target="_blank" href="javascript:;">
+                            <img src="../src/img/3.png" class="footer__ft__img3">
+                        </a>
+                        <a rel="nofollow" target="_blank" href="javascript:;">
+                            <img src="../src/img/4.png" class="footer__ft__img4w">
+                        </a>
+                        <a target="_blank" href="javascript:;" id="___szfw_logo___">
+                            <img class="footer__ft__img4" src="../src/img/5.png">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 底部结束 -->
-    </body>
+    </div>
+    <!-- 底部结束 -->
+    <script>
+        var aLi = document.querySelectorAll('.title li');
+        var aItem = document.querySelectorAll('.item');
+        for (var i = 0; i < aLi.length; i++) {
+            (function(i) { //var i:函数内部的变量，一直存在于内存中，不会消失
+                aLi[i].onclick = function() {
+                    for (var j = 0; j < aLi.length; j++) {
+                        aLi[j].className = '';
+                        aItem[j].style.display = 'none';
+                    }
+                    aLi[i].className = 'active';
+                    aItem[i].style.display = 'block';
+                }
+            })(i); //解决方法是在闭包的帮助下，把每次循环的 i 值都封闭起来。当在事件函数中顺着作用域链中从内到外查找变量 i 时，会先找到被封闭在闭包环境中的 i 
+        }
+    </script>
+</body>
 
 </html>

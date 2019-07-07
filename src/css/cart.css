@@ -1,0 +1,114 @@
+        .order-list {
+            width: 1026px;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 20px;
+        }
+        
+        .order-list-item .order-list-item-header {
+            padding: 14px 0 14px 20px;
+            background: #f7f7f7;
+            color: #000;
+            /* border-bottom: 1px solid #ebebeb; */
+        }
+        
+        .order-list-header {
+            width: 1016px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            background: #f7f7f7;
+            color: #333;
+            padding: 14px 0 14px 20px;
+            height: 40px;
+            line-height: 16px;
+        }
+        
+        .order-list-container {
+            min-height: 550px;
+            width: 1024px;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper {
+            padding: 12px 0 16px;
+        }
+        
+        .order-list-header .next-col {
+            padding: 0;
+            text-align: center;
+        }
+        
+        .next-col {
+            -webkit-box-flex: 1;
+            -moz-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            display: inline-block;
+            padding: 0 4px;
+            width: auto;
+        }
+        
+        .order-list {
+            width: 1026px;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 20px;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper {
+            padding: 12px 0 16px;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper .project-name-img {
+            margin-right: 16px;
+            cursor: pointer;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper .project-name-content .project-name {
+            color: #4a4a4a;
+            width: 200px;
+            margin-bottom: 4px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper .project-name-content .project-name-perform {
+            color: #9b9b9b;
+            margin-bottom: 2px;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper .project-name-content .project-name-venue {
+            color: #9b9b9b;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 300px;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper .pick-type-icon {
+            display: inline-block;
+            margin-top: 4px;
+            border-radius: 3px 3px 9px;
+            color: #fff;
+            padding: 2px 8px;
+        }
+        
+        .order-list-item .order-list-item-bottom {
+            padding-left: 20px;
+        }
+        
+        .order-list-item .order-list-item-bottom .project-name-wrapper .project-name-img img {
+            width: 62px;
+            height: 80px;
+        }
+        
+        .order-list-item .order-list-item-bottom .ticket-number .ticket-number-wrapper {
+            display: block;
+            padding: 12px 0 16px;
+            color: #3c3c3c;
+            text-align: center;
+        }

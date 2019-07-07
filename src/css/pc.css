@@ -18,3 +18,21 @@
 .zebra-dm-pc-register .marathon {
     background: #fff
 }
+
+#container input {
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 0 12px;
+    border: 1px solid #c4c6cf;
+    background-color: #fff;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+#container p {
+    line-height: 60px;
+    font-size: 14px;
+    color: #666666;
+    margin-left: 250px
+}
