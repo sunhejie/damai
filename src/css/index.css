@@ -46,7 +46,7 @@
 }
 
 .sidebar .item .icon {
-    background: url(//img.alicdn.com/tfs/TB1u1U9xmzqK1RjSZFHXXb3CpXa-64-180.png) no-repeat;
+    /* background: url(//img.alicdn.com/tfs/TB1u1U9xmzqK1RjSZFHXXb3CpXa-64-180.png) no-repeat; */
     margin: 0 auto;
     width: 32px;
     height: 29px;
@@ -77,7 +77,7 @@
     left: -92px;
     top: -6px;
     box-shadow: 2px 2px 4px #ccc;
-    background: #fff url(//img.alicdn.com/tfs/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg) no-repeat center center;
+    /* background: #fff url(//img.alicdn.com/tfs/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg) no-repeat center center; */
     background-size: 90%;
     padding: 5px
 }
@@ -823,7 +823,7 @@ img {
 
 .dm-content-wrap .dm-content .box .box-left {
     display: inline-block;
-    width: 270px;
+    width: 260px;
     height: 360px;
     position: relative;
     overflow: hidden
@@ -7254,7 +7254,7 @@ img {
     box-sizing: border-box;
     width: 320px;
     border-left: 1px solid #ebebeb;
-    padding: 40px 18px 0
+    padding: 10px 18px 0
 }
 
 .error[data-v-923b9f90] {
@@ -7306,8 +7306,9 @@ img {
     top: 60px;
     left: 0px;
     border: 1px solid #ddd;
-    /* display: none; */
+    display: none;
     z-index: 10000;
+    font-family: '微软雅黑'
 }
 
 #loutinav ul li {
@@ -7315,11 +7316,11 @@ img {
     height: 32px;
     border-bottom: 1px dotted #DDDDDD;
     list-style: none;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     position: relative;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 8px 0;
     background: #918888;
     color: #fff;
 }
@@ -7349,4 +7350,32 @@ img {
     background: rgba(255, 18, 104, .5);
     color: #fff;
     display: block;
+}
+
+
+/* 为你推荐css */
+
+#tuijian {
+    width: 1200px;
+    height: 30px;
+    margin: 30px 0 30px 0;
+    font-family: '微软雅黑';
+    font-size: 18px;
+    font-weight: 700
+}
+
+#main1 {
+    position: relative;
+}
+
+.pin {
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.box {
+    padding: 5px;
+    border-color: 1px solid #ccc;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 5px;
 }

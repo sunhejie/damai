@@ -46,11 +46,10 @@
                     </ul>
                 </div>
                 <div class="tab_content">
-
                     <div class="item show123">
                         <div class="login-content nc-outer-box">
                             <div class="login-password">
-                                <form id="login-form" class="login-form">
+                                <form method="post" onsubmit="return false;">
                                     <div class="fm-field">
                                         <div style="position: absolute;left:10px;top:5px"><label class="fm-label-icon"><i class="icon-user iconfont" title="用户名"></i></label></div>
                                         <div class="input-plain-wrap input-wrap-loginid "><input type="text" class="fm-text" id="fm-login-id" tabindex="1" aria-label="请输入手机号或邮箱" placeholder="请输入手机号或邮箱" autocapitalize="off"></div>
@@ -100,59 +99,61 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="item">
-                        <img src="../src/img1/597238920905.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <div class="login-password">
-                            <form id="login-form" class="login-form">
-                                <div class="fm-field">
-                                    <div><label class="fm-label-icon"><i class="icon-user iconfont" title="手机号"></i></label></div>
-                                    <div class="input-plain-wrap input-wrap-loginid "><input type="text" class="fm-text" id="fm-login-id" tabindex="1" aria-label="请输入手机号" placeholder="请输入手机号或邮箱" autocapitalize="off"></div>
-                                </div>
-                                <div class="fm-field">
-                                    <div><label class="fm-label-icon"><i class="icon-pwd iconfont" title="验证码"></i></label></div>
-                                    <div class="input-plain-wrap input-wrap-password"><input type="password" class="fm-text" id="fm-login-password" tabindex="2" aria-label="请输入验证码" placeholder="请输入登录密码" maxlength="40" autocomplete="off" autocapitalize="off"></div>
-                                </div>
-                                <div>
-                                    <div id="nocaptcha-password" class="nc-container tb-login" style="display: none;" data-nc-idx="1">
-                                        <div id="nc_1_wrapper" class="nc_wrapper">
-                                            <div id="nc_1_n1t" class="nc_scale">
-                                                <div id="nc_1__bg" class="nc_bg"></div>
-                                                <span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
-                                                <div id="nc_1__scale_text" class="scale_text slidetounlock"><span class="nc-lang-cnt" data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
-                                                <div id="nc_1_clickCaptcha" class="clickCaptcha">
-                                                    <div class="clickCaptcha_text">
-                                                        <b id="nc_1__captcha_text" class="nc_captch_text"></b>
-                                                        <i id="nc_1__btn_2" class="nc_iconfont nc_btn_2 btn_refresh"></i>
+                        <div class="login-content nc-outer-box">
+                            <div class="login-password">
+                                <form method="post" onsubmit="return false;">
+                                    <div class="fm-field">
+                                        <div style="position: absolute;left:10px;top:5px"><label class="fm-label-icon"><i class="icon-user iconfont" title="用户名"></i></label></div>
+                                        <div class="input-plain-wrap input-wrap-loginid "><input type="text" class="fm-text" id="fm-login-id" tabindex="1" aria-label="请输入手机号或邮箱" placeholder="请输入手机号" autocapitalize="off"></div>
+                                    </div>
+                                    <div class="fm-field">
+                                        <div style="position: absolute;left:10px;top:5px"><label class="fm-label-icon"><i class="icon-pwd iconfont" title="请输入登录密码"></i></label></div>
+                                        <div class="input-plain-wrap input-wrap-password"><input type="password" class="fm-text" id="fm-login-password" tabindex="2" aria-label="请输入登录密码" placeholder="请输入验证码" maxlength="40" autocomplete="off" autocapitalize="off"></div>
+                                    </div>
+                                    <div>
+                                        <div id="nocaptcha-password" class="nc-container tb-login" style="display: none;" data-nc-idx="1">
+                                            <div id="nc_1_wrapper" class="nc_wrapper">
+                                                <div id="nc_1_n1t" class="nc_scale">
+                                                    <div id="nc_1__bg" class="nc_bg"></div>
+                                                    <span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
+                                                    <div id="nc_1__scale_text" class="scale_text slidetounlock"><span class="nc-lang-cnt" data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
+                                                    <div id="nc_1_clickCaptcha" class="clickCaptcha">
+                                                        <div class="clickCaptcha_text">
+                                                            <b id="nc_1__captcha_text" class="nc_captch_text"></b>
+                                                            <i id="nc_1__btn_2" class="nc_iconfont nc_btn_2 btn_refresh"></i>
+                                                        </div>
+                                                        <div class="clickCaptcha_img"></div>
+                                                        <div class="clickCaptcha_btn"></div>
                                                     </div>
-                                                    <div class="clickCaptcha_img"></div>
-                                                    <div class="clickCaptcha_btn"></div>
-                                                </div>
-                                                <div id="nc_1_imgCaptcha" class="imgCaptcha">
-                                                    <div class="imgCaptcha_text"><input id="nc_1_captcha_input" maxlength="6" type="text" style="ime-mode:disabled"></div>
-                                                    <div class="imgCaptcha_img" id="nc_1__imgCaptcha_img"></div>
-                                                    <i id="nc_1__btn_1" class="nc_iconfont nc_btn_1 btn_refresh" onclick="document.getElementById('nc_1__imgCaptcha_img').children[0].click()"></i>
-                                                    <div class="imgCaptcha_btn">
-                                                        <div id="nc_1__captcha_img_text" class="nc_captcha_img_text"></div>
-                                                        <div id="nc_1_scale_submit" class="nc_scale_submit"></div>
+                                                    <div id="nc_1_imgCaptcha" class="imgCaptcha">
+                                                        <div class="imgCaptcha_text"><input id="nc_1_captcha_input" maxlength="6" type="text" style="ime-mode:disabled"></div>
+                                                        <div class="imgCaptcha_img" id="nc_1__imgCaptcha_img"></div>
+                                                        <i id="nc_1__btn_1" class="nc_iconfont nc_btn_1 btn_refresh" onclick="document.getElementById('nc_1__imgCaptcha_img').children[0].click()"></i>
+                                                        <div class="imgCaptcha_btn">
+                                                            <div id="nc_1__captcha_img_text" class="nc_captcha_img_text"></div>
+                                                            <div id="nc_1_scale_submit" class="nc_scale_submit"></div>
+                                                        </div>
                                                     </div>
+                                                    <div id="nc_1_cc" class="nc-cc"></div>
+                                                    <i id="nc_1__voicebtn" tabindex="0" role="button" class="nc_voicebtn nc_iconfont" style="display:none"></i>
+                                                    <b id="nc_1__helpbtn" class="nc_helpbtn"><span class="nc-lang-cnt" data-nc-lang="_learning">了解新功能</span></b>
                                                 </div>
-                                                <div id="nc_1_cc" class="nc-cc"></div>
-                                                <i id="nc_1__voicebtn" tabindex="0" role="button" class="nc_voicebtn nc_iconfont" style="display:none"></i>
-                                                <b id="nc_1__helpbtn" class="nc_helpbtn"><span class="nc-lang-cnt" data-nc-lang="_learning">了解新功能</span></b>
+                                                <div id="nc_1__voice" class="nc_voice"></div>
                                             </div>
-                                            <div id="nc_1__voice" class="nc_voice"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="fm-btn"><button type="submit" tabindex="3" class="fm-button fm-submit password-login">登录</button></div>
-
-                                <div class="login-blocks login-links"><a href="#" target="_blank" class="">忘记密码</a><a href="./registor.html" target="_blank" class="">免费注册</a></div>
-                            </form>
+                                    <div class="fm-btn"><button type="submit" tabindex="3" class="fm-button fm-submit password-login">登录</button></div>
+                                    <div>
+                                        <img src="../src/img/weixin.png" alt="" style="height: 25px;margin-top:8px ">
+                                    </div>
+                                    <div class="login-blocks login-links"><a href="#" target="_blank" class="">忘记密码</a><a href="./registor.html" target="_blank" class="">免费注册</a></div>
+                                </form>
+                            </div>
                         </div>
+                    </div>
+                    <div class="item" style="text-align: center">
+                        <img src="../src/img1/597238920905.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -258,22 +259,9 @@
         </div>
     </div>
     <!-- 底部结束 -->
-    <script>
-        var aLi = document.querySelectorAll('.title li');
-        var aItem = document.querySelectorAll('.item');
-        for (var i = 0; i < aLi.length; i++) {
-            (function(i) { //var i:函数内部的变量，一直存在于内存中，不会消失
-                aLi[i].onclick = function() {
-                    for (var j = 0; j < aLi.length; j++) {
-                        aLi[j].className = '';
-                        aItem[j].style.display = 'none';
-                    }
-                    aLi[i].className = 'active';
-                    aItem[i].style.display = 'block';
-                }
-            })(i); //解决方法是在闭包的帮助下，把每次循环的 i 值都封闭起来。当在事件函数中顺着作用域链中从内到外查找变量 i 时，会先找到被封闭在闭包环境中的 i 
-        }
-    </script>
+    <script src="./script/thirdplugins/jquery.js"></script>
+    <script src="./script/js/index.js"></script>
+
 </body>
 
 </html>

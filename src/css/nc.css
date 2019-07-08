@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {
     font-family: 'nc-iconfont';
-    src: url("//at.alicdn.com/t/font_1442201118_5768895.eot");
+    /* src: url("//at.alicdn.com/t/font_1442201118_5768895.eot"); */
     src: url("//at.alicdn.com/t/font_1442201118_5768895.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_1442201118_5768895.woff") format('woff'), url("//at.alicdn.com/t/font_1442201118_5768895.ttf") format('truetype'), url("//at.alicdn.com/t/font_1442201118_5768895.svg#iconfont") format('svg')
 }
 

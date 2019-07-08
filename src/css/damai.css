@@ -451,7 +451,7 @@ a:hover {
 }
 
 .sidebar .item .icon {
-    background: url(//img.alicdn.com/tfs/TB1.FXkxTtYBeNjy1XdXXXXyVXa-64-180.png) no-repeat;
+    /* background: url(//img.alicdn.com/tfs/TB1.FXkxTtYBeNjy1XdXXXXyVXa-64-180.png) no-repeat; */
     margin: 0 auto;
     width: 32px;
     height: 29px;
