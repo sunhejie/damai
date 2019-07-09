@@ -1888,7 +1888,8 @@ img {
     color: #000
 }
 
-.perform .order .perform__order__select {
+.perform .order .perform__order__select,
+.perform .order .perform__order__select1 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1906,18 +1907,21 @@ img {
     margin-bottom: 28px
 }
 
-.perform .order .perform__order__select .select_left {
+.perform .order .perform__order__select .select_left,
+.perform .order .perform__order__select1 .select_left {
     display: inline-block;
     font-size: 16px;
     color: #4a4a4a;
     height: 48px
 }
 
-.perform .order .perform__order__select .select_left__top {
+.perform .order .perform__order__select .select_left__top,
+.perform .order .perform__order__select1 .select_left__top {
     line-height: 0
 }
 
-.perform .order .perform__order__select .select_right {
+.perform .order .perform__order__select .select_right,
+.perform .order .perform__order__select1.select_right {
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
@@ -1928,11 +1932,13 @@ img {
     flex: 1
 }
 
-.perform .order .perform__order__select .select_right .loading {
+.perform .order .perform__order__select .select_right .loading,
+.perform .order .perform__order__select1 .select_right .loading {
     font-size: 14px
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1963,7 +1969,8 @@ img {
     text-align: center
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item.disabled {
     background-color: #f6f6f6!important;
     border: 1px solid #f6f6f6;
     outline-color: #f6f6f6;
@@ -1973,21 +1980,26 @@ img {
     cursor: not-allowed
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled .inner {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled .inner,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item.disabled .inner {
     border: 1px solid #f6f6f6
 }
 
 .perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled .discounts,
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled .presell {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item.disabled .presell,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item.disabled .discounts,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item.disabled .presell {
     background-color: #d6d6d6
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item .skuname {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item .skuname,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item .skuname {
     text-align: left;
     margin: 1px 0
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item .promotion {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item .promotion,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item .promotion {
     margin-top: -5px;
     display: inline-block;
     font-size: 12px;
@@ -2001,7 +2013,8 @@ img {
     color: #bbb
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item .inner {
+.perform .order .perform__order__select .select_right .select_right_list .select_right_list_item .inner,
+.perform .order .perform__order__select1 .select_right .select_right_list .select_right_list_item .inner {
     display: block;
     height: 100%;
     min-width: 40px;
@@ -2010,7 +2023,8 @@ img {
     text-align: center
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .sku_item {
+.perform .order .perform__order__select .select_right .select_right_list .sku_item,
+.perform .order .perform__order__select1 .select_right .select_right_list .sku_item {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -2029,12 +2043,14 @@ img {
     outline-color: #ffeaf1
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .active .inner {
+.perform .order .perform__order__select .select_right .select_right_list .active .inner,
+.perform .order .perform__order__select1 .select_right .select_right_list .active .inner {
     border: 1px solid #ff1268;
     padding: 0 20px
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .notactive {
+.perform .order .perform__order__select .select_right .select_right_list .notactive,
+.perform .order .perform__order__select1 .select_right .select_right_list .notactive {
     background-color: #f6f6f6;
     border: 1px solid #f6f6f6;
     color: rgba(0, 0, 0, .2);
@@ -2076,7 +2092,8 @@ img {
     background-color: #d6d6d6
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .loading {
+.perform .order .perform__order__select .select_right .select_right_list .loading,
+.perform .order .perform__order__select1 .select_right .select_right_list .loading {
     padding: 14px 20px 14px 0;
     margin: 0 6px 6px 0;
     font-size: 12px

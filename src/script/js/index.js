@@ -87,7 +87,6 @@
         }
         //触发滚动条事件
         $louceng.each(function(index, element) { //遍历楼层
-            //console.log($louceng.eq(index).offset().top); //获取每层的top
             let $loucengtop = $louceng.eq(index).offset().top + $(element).height() / 2;
             if ($loucengtop >= $scrolltop) {
                 $('#loutinav li').not('.last').removeClass('active');
@@ -187,6 +186,7 @@
     })
 
 }();
+
 // 二级效果 “全国”
 ;
 ! function() {
