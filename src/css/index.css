@@ -7396,3 +7396,50 @@ img {
     box-shadow: 0 0 6px #ccc;
     border-radius: 5px;
 }
+
+.sf {
+    width: 50px;
+    height: 50px;
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 30px;
+    visibility: hidden;
+}
+
+.bf {
+    overflow: hidden;
+    position: absolute;
+    left: 410px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.bf img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 700px;
+    height: 800px;
+}
+
+#linkbox {
+    width: 200px;
+    height: 110px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -150px;
+    display: none;
+    background: #eee;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+#linkbox span {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
+}

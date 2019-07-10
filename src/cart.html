@@ -111,193 +111,197 @@
             <hr>
             <div id="container">
                 <div class="order-list">
+                    <!--购物车为空时显示的盒子-->
+                    <div class="empty-cart">
+                        <div class="empty-cart-msg">
+                            购物车空空的哦~，去看看心仪的商品吧~
+                            <a href="">去购物></a>
+                        </div>
+                    </div>
                     <div class="order-list-wrapper" data-spm="list" style="display: block;">
                         <div class="next-row order-list-header">
                             <div class="next-col project-name" style="width: 390px;">项目名称</div>
                             <div class="next-col ticket-number" style="width: 144px;">票品张数</div>
-                            <div class="next-col order-amount" style="width: 130px;">订单金额</div>
-                            <div class="next-col transaction-status" style="width: 130px;">交易状态</div>
-                            <div class="next-col transaction-operation" style="width: 100px;">交易操作</div>
-                        </div>
-                        <div class="next-loading order-list-container">
-                            <div class="next-loading-component">
-                                <div class="next-col order-list-item" data-spm="item_0">
-                                    <div class="next-row order-list-item-header">订单号：1016991813</div>
-                                    <div class="next-row order-list-item-bottom" style="border: 1px solid #f7f7f7;;">
-                                        <div class="next-col project-name" style="width: 390px;">
-                                            <div class="next-row project-name-wrapper" data-spm="list" style="float: left;">
-                                                <div class="next-col next-col-4 project-name-img" data-spm="ditem_0"><img src="http://pimg.dmcdn.cn/perform/project/1115/111566_n_171_214.jpg"></div>
-                                                <div class="next-col project-name-content" data-spm="ditem_0">
-                                                    <div>2016方格子音乐节</div>
-                                                    <div><span>演出场次：2016-11-12 14:30</span></div>
-                                                    <div>演出场馆：杭州锅炉厂8号厂房</div>
+                            <div class="next-col order-amount" style="width: 230px;">订单金额</div>
+                            <div class="next-col transaction-status" style="width: 130px;">交易操作</div>
 
+                        </div>
+                        <div class="next-loading order-list-container" id="list-container">
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" name="" id="" class="allsel" value="" /> 全选
+                                    </div>
+                                </div>
+                                <div class="next-loading-component" id='component' style="display: none">
+
+                                    <div class="next-col order-list-item" data-spm="item_0">
+
+                                        <div class="next-row order-list-item-bottom " style="border: 1px solid #f7f7f7;; ">
+                                            <div class="next-col project-name " style="width: 390px; ">
+                                                <div class="next-row project-name-wrapper " data-spm="list " style="float: left; ">
+                                                    <div class="next-col next-col-4 project-name-img " data-spm="ditem_0 ">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" name="" id="" value="" />
+                                                        </div>
+                                                        <img src="http://pimg.dmcdn.cn/perform/project/1115/111566_n_171_214.jpg "></div>
+                                                    <div class="next-col project-name-content " data-spm="ditem_0 ">
+                                                        <div class="title ">2016方格子音乐节</div>
+                                                        <div><span>演出场次：2016-11-12 14:30</span></div>
+                                                        <div class="addr ">演出场馆：杭州锅炉厂8号厂房</div>
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="next-col ticket-number" style="width: 144px;">
-                                            <div class="next-row ticket-number-wrapper">1</div>
-                                        </div>
-                                        <div class="next-col order-amount" style="width: 130px;">
-                                            <div class="next-col order-amount-wrapper">
-                                                <div>￥100.00</div>
-                                                <div class="next-row transportation-costs">(含运费￥0.00)</div>
+                                            <div class="next-col ticket-number " style="width: 144px; ">
+                                                <div class="next-row ticket-number-wrapper ">1</div>
                                             </div>
-                                        </div>
-                                        <div class="next-col transaction-status" style="width: 130px;">
-                                            <div class="next-col transaction-status-wrapper">
-                                                <div class="next-row" data-spm="list"><a data-spm="ddetail_0" href="javascript:;">确认付款</a></div>
-                                                <div class="next-row" data-spm="list"><a data-spm="ddetail_0" href="javascript:;">删除</a></div>
+                                            <div class="next-col order-amount " style="width: 230px; text-align: center">
+                                                <div class="next-col order-amount-wrapper ">
+                                                    <div class="price ">￥100.00</div>
+                                                    <div class="next-row transportation-costs ">(含运费￥0.00)</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="next-col transaction-operation" style="width: 210px;">
-                                            <div class="next-col transaction-operation-wrapper">
-                                                <div class="text-wrapper">
-                                                    <div class="next-row pick-seat-info" data-exp="true" within24="false" ic_id="111566" usercode="54581056" data-spm="dnotice" data-aplus-ae="1" data-spm-anchor-id="a2oeg.orderlist.item_0.dnotice.62de1ae6E0hU1h"></div>
+
+                                            <div class="next-col transaction-status " style="width: 130px; ">
+
+                                                <div class="next-col transaction-status-wrapper ">
+                                                    <div class="next-row " data-spm="list "><a data-spm="ddetail_0 " href="javascript:; ">确认付款</a></div>
+                                                    <div class="next-row " data-spm="list "><a data-spm="ddetail_0 " href="javascript:; " id="del ">删除</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="next-col transaction-operation " style="width: 210px; ">
+                                                <div class="next-col transaction-operation-wrapper ">
+                                                    <div class="text-wrapper ">
+                                                        <div class="next-row pick-seat-info " data-exp="true " within24="false " ic_id="111566 " usercode="54581056 " data-spm="dnotice " data-aplus-ae="1 " data-spm-anchor-id="a2oeg.orderlist.item_0.dnotice.62de1ae6E0hU1h "></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <div class="next-row order-errors" style="display: none;">
-                        <div class="next-col error-image"><img src="https://img.alicdn.com/tfs/TB11puPCgmTBuNjy1XbXXaMrVXa-238-168.png"></div>
-                        <div class="next-col error-text">
-                            <div class="next-row error-msg"></div>
+                        </div>
+                        <div class="next-row order-errors " style="display: none; ">
+                            <div class="next-col error-image "><img src="https://img.alicdn.com/tfs/TB11puPCgmTBuNjy1XbXXaMrVXa-238-168.png "></div>
+                            <div class="next-col error-text ">
+                                <div class="next-row error-msg "></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-    </div>
-    <!-- mian end-->
+        <!-- mian end-->
 
 
 
 
-    <div class="dm-footer">
-        <div class="w1200">
-            <ul class="footer__links">
+        <div class="dm-footer ">
+            <div class="w1200 ">
+                <ul class="footer__links ">
 
-                <li class="footer__links__list"><a href="https://help.damai.cn/" target="_blank" data-spm="flink0">帮助中心</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://help.damai.cn/ " target="_blank " data-spm="flink0 ">帮助中心</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://help.damai.cn/helpPage.htm?pageId=69&amp;categoryId=30" target="_blank" data-spm="flink1">公司介绍</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://help.damai.cn/helpPage.htm?pageId=69&amp;categoryId=30 " target="_blank " data-spm="flink1 ">公司介绍</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://help.damai.cn/helpPage.htm?pageId=70&amp;categoryId=30" target="_blank" data-spm="flink2">品牌识别</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://help.damai.cn/helpPage.htm?pageId=70&amp;categoryId=30 " target="_blank " data-spm="flink2 ">品牌识别</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://help.damai.cn/helpPage.htm?pageId=72&amp;categoryId=30" target="_blank" data-spm="flink3">公司大事记</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://help.damai.cn/helpPage.htm?pageId=72&amp;categoryId=30 " target="_blank " data-spm="flink3 ">公司大事记</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://help.damai.cn/helpPage.htm?pageId=40&amp;categoryId=14" target="_blank" data-spm="flink4">协议及隐私权政策</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://help.damai.cn/helpPage.htm?pageId=40&amp;categoryId=14 " target="_blank " data-spm="flink4 ">协议及隐私权政策</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://jubao.alibaba.com/internet/readme.htm?spm=a2o6e.search.0.0.72f44d15Votov6&amp;site=damai" target="_blank" data-spm="flink5">廉正举报</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://jubao.alibaba.com/internet/readme.htm?spm=a2o6e.search.0.0.72f44d15Votov6&amp;site=damai " target="_blank " data-spm="flink5 ">廉正举报</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://help.damai.cn/helpPage.htm?pageId=58&amp;categoryId=5" target="_blank" data-spm="flink6">联系合作</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://help.damai.cn/helpPage.htm?pageId=58&amp;categoryId=5 " target="_blank " data-spm="flink6 ">联系合作</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://job.alibaba.com/zhaopin/positionList.htm?keyWord=JXU1OTI3JXU5RUE2&amp;_input_charset=UTF-8" target="_blank" data-spm="flink7">招聘信息</a></li>
-                <li class="footer__links__grep">|</li>
+                    <li class="footer__links__list "><a href="https://job.alibaba.com/zhaopin/positionList.htm?keyWord=JXU1OTI3JXU5RUE2&amp;_input_charset=UTF-8 " target="_blank " data-spm="flink7 ">招聘信息</a></li>
+                    <li class="footer__links__grep ">|</li>
 
-                <li class="footer__links__list"><a href="https://x.damai.cn/markets/special/fangzhapian?spm=a2o6e.home.0.0.75df48d3hqGWGD&amp;wh_ttid=pc" target="_blank" data-spm="flink8">防骗秘籍</a></li>
+                    <li class="footer__links__list "><a href="https://x.damai.cn/markets/special/fangzhapian?spm=a2o6e.home.0.0.75df48d3hqGWGD&amp;wh_ttid=pc " target="_blank " data-spm="flink8 ">防骗秘籍</a></li>
 
 
-            </ul>
-            <div class="footer__ft">
-                <div class="footer__ft_fl">
-                    <a href="https://www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B" target="_blank" class="footer__ft__logo">
-                        <img src="./img1/TB1otMASmzqK1RjSZPxXXc4tVXa-167-60.png">
-                    </a>
-                    <div class="footer__ft__code__box">
-                        <img class="footer__ft__code" src="./img1/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg" alt="">
-                        <span>APP下载</span>
+                </ul>
+                <div class="footer__ft ">
+                    <div class="footer__ft_fl ">
+                        <a href="https://www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B " target="_blank " class="footer__ft__logo ">
+                            <img src="./img1/TB1otMASmzqK1RjSZPxXXc4tVXa-167-60.png ">
+                        </a>
+                        <div class="footer__ft__code__box ">
+                            <img class="footer__ft__code " src="./img1/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg " alt=" ">
+                            <span>APP下载</span>
+                        </div>
                     </div>
-                </div>
-                <div class="footer__ft_fr">
-                    <div class="footer__fr__contact">
+                    <div class="footer__ft_fr ">
+                        <div class="footer__fr__contact ">
 
-                        <a style="margin-left:0;" href="https://online.damai.cn/alime/index?from=damai_pc_item&amp;v=3" class="footer__fr__contact__btn alime">在线客服</a>
-                    </div>
-                    <ul class="footer__ft__words">
-                        <li class="footer__ft__certificate"><a href="http://www.miitbeian.gov.cn/?spm=a2o6e.home.0.0.5b4d48d3mVzb2Z" target="_blank">京ICP证031057号</a></li>
-                        <li class="footer__ft__grep">|</li>
-                        <li class="footer__ft__certificate"><a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备11043884号</a></li>
-                        <li class="footer__ft__grep">|</li>
-                        <li class="footer__ft__certificate"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037341" target="_blank">京公网安备11010502037341号</a>
-                        </li>
-                        <li class="footer__ft__grep">|</li>
-                        <li class="footer__ft__certificate"><a href="https://img.alicdn.com/tfs/TB1K9r6xN9YBuNjy0FfXXXIsVXa-1152-799.jpg" target="_blank">广播电视节目制作经营许可证
+                            <a style="margin-left:0; " href="https://online.damai.cn/alime/index?from=damai_pc_item&amp;v=3 " class="footer__fr__contact__btn alime ">在线客服</a>
+                        </div>
+                        <ul class="footer__ft__words ">
+                            <li class="footer__ft__certificate "><a href="http://www.miitbeian.gov.cn/?spm=a2o6e.home.0.0.5b4d48d3mVzb2Z " target="_blank ">京ICP证031057号</a></li>
+                            <li class="footer__ft__grep ">|</li>
+                            <li class="footer__ft__certificate "><a href="http://www.miitbeian.gov.cn/ " target="_blank ">京ICP备11043884号</a></li>
+                            <li class="footer__ft__grep ">|</li>
+                            <li class="footer__ft__certificate "><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037341 " target="_blank ">京公网安备11010502037341号</a>
+                            </li>
+                            <li class="footer__ft__grep ">|</li>
+                            <li class="footer__ft__certificate "><a href="https://img.alicdn.com/tfs/TB1K9r6xN9YBuNjy0FfXXXIsVXa-1152-799.jpg " target="_blank ">广播电视节目制作经营许可证
                         (京)字第02253号</a></li>
-                    </ul>
-                    <ul class="footer__ft__words">
-                        <li class="footer__ft__certificate"><a href="https://img.alicdn.com/tfs/TB1AsH4xH9YBuNjy0FgXXcxcXXa-1420-1032.jpg" target="_blank">网络文化经营许可证
+                        </ul>
+                        <ul class="footer__ft__words ">
+                            <li class="footer__ft__certificate "><a href="https://img.alicdn.com/tfs/TB1AsH4xH9YBuNjy0FgXXcxcXXa-1420-1032.jpg " target="_blank ">网络文化经营许可证
                         京网文[2016]3438-413号</a></li>
-                        <li class="footer__ft__grep">|</li>
-                        <li class="footer__ft__certificate"><a href="https://img.alicdn.com/tfs/TB1DfD6CxGYBuNjy0FnXXX5lpXa-1079-1527.jpg" target="_blank">营业性演出许可证
+                            <li class="footer__ft__grep ">|</li>
+                            <li class="footer__ft__certificate "><a href="https://img.alicdn.com/tfs/TB1DfD6CxGYBuNjy0FnXXX5lpXa-1079-1527.jpg " target="_blank ">营业性演出许可证
                         京市演587号</a></li>
-                    </ul>
-                    <ul class="footer__ft__words">
-                        <li class="footer__ft__certificate">北京红马传媒文化发展有限公司 版权所有</li>
-                        <li class="footer__ft__certificate"><a href="https://www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B">大麦网</a></li>
-                        <li>Copyright 2003-2018 All Rights Reserved</li>
-                    </ul>
-                    <ul class="footer__ft__words">
-                        <li>举报投诉邮箱：damai_tousu@member.alibaba.com</li>
-                    </ul>
-                    <div class="footer__ft__img">
-                        <span id="siteseal">
+                        </ul>
+                        <ul class="footer__ft__words ">
+                            <li class="footer__ft__certificate ">北京红马传媒文化发展有限公司 版权所有</li>
+                            <li class="footer__ft__certificate "><a href="https://www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B ">大麦网</a></li>
+                            <li>Copyright 2003-2018 All Rights Reserved</li>
+                        </ul>
+                        <ul class="footer__ft__words ">
+                            <li>举报投诉邮箱：damai_tousu@member.alibaba.com</li>
+                        </ul>
+                        <div class="footer__ft__img ">
+                            <span id="siteseal ">
                 
-                    <img style="cursor:pointer;cursor:hand" class="footer__ft__img1" src="./img1/TB1gw_ZxNWYBuNjy1zkXXXGGpXa-131-32.gif" onclick="verifySeal();" alt="SSL site seal - click to verify" data-spm-anchor-id="a2o6e.home.0.i1.5b4d48d3mVzb2Z">
+                    <img style="cursor:pointer;cursor:hand " class="footer__ft__img1 " src="./img1/TB1gw_ZxNWYBuNjy1zkXXXGGpXa-131-32.gif " onclick="verifySeal(); " alt="SSL site seal - click to verify " data-spm-anchor-id="a2o6e.home.0.i1.5b4d48d3mVzb2Z ">
                     </span>
-                        <a rel="nofollow" title="电子营业执照" target="_blank" href="https://img.alicdn.com/tfs/TB1CChlpwDqK1RjSZSyXXaxEVXa-1200-1672.jpg">
-                            <img class="footer__ft__img2" alt="" src="./img1/TB1ZO80pyOYBuNjSsD4XXbSkFXa-141-41.png">
-                        </a>
+                            <a rel="nofollow " title="电子营业执照 " target="_blank " href="https://img.alicdn.com/tfs/TB1CChlpwDqK1RjSZSyXXaxEVXa-1200-1672.jpg ">
+                                <img class="footer__ft__img2 " alt=" " src="./img1/TB1ZO80pyOYBuNjSsD4XXbSkFXa-141-41.png ">
+                            </a>
 
-                        <a rel="nofollow" target="_blank" href="https://www.pcisecuritystandards.org/">
-                            <img src="./img1/TB1Y580pyOYBuNjSsD4XXbSkFXa-83-50.png" class="footer__ft__img3">
-                        </a>
-                        <a rel="nofollow" target="_blank" href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/1756737221">
-                            <img src="./img1/TB1pM_ZxNWYBuNjy1zkXXXGGpXa-114-40.png" class="footer__ft__img4w">
-                        </a>
-                        <a target="_blank" href="https://search.szfw.org/cert/l/CX20130327002367002885" id="___szfw_logo___">
-                            <img class="footer__ft__img4" src="./img1/TB1C4nNxTlYBeNjSszcXXbwhFXa-114-42.png">
-                        </a>
+                            <a rel="nofollow " target="_blank " href="https://www.pcisecuritystandards.org/ ">
+                                <img src="./img1/TB1Y580pyOYBuNjSsD4XXbSkFXa-83-50.png " class="footer__ft__img3 ">
+                            </a>
+                            <a rel="nofollow " target="_blank " href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/1756737221 ">
+                                <img src="./img1/TB1pM_ZxNWYBuNjy1zkXXXGGpXa-114-40.png " class="footer__ft__img4w ">
+                            </a>
+                            <a target="_blank " href="https://search.szfw.org/cert/l/CX20130327002367002885 " id="___szfw_logo___ ">
+                                <img class="footer__ft__img4 " src="./img1/TB1C4nNxTlYBeNjSszcXXbwhFXa-114-42.png ">
+                            </a>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="server_info" style="display:none;color:#f3f3f3;text-align:center;"></div>
-
-    <div class="sidebar" data-spm="slidelayer">
-        <div class="item">
-            <a class="alime" href="https://online.damai.cn/alime/index?from=damai_pc_item&amp;v=3" target="_blank" data-spm="dcustomerservice">
-                <div class="icon service"></div>
-                <p>在线客服</p>
-            </a>
-        </div>
-        <div class="item" style="border-bottom-width: 0px;">
-            <a href="javascript:void(0)" target="_blank">
-                <div class="icon damai"></div>
-                <p>APP下载</p>
-                <div class="qrcode"></div>
-            </a>
-        </div>
-        <div class="item J_GoTop" style="display: none;">
-            <div class="icon gotop"></div>
-            <p>回到顶部</p>
-        </div>
-    </div><iframe src="./img1/blk.html" id="_oid_ifr_" style="width: 0px; height: 0px; display: none;"></iframe></body>
+        <script src="./script/thirdplugins/jquery.js "></script>
+        <script src="./script/thirdplugins/jquery.cookie.js "></script>
+        <script src="./script/js/details.js "></script>
+        <script src="./script/js/cart.js "></script>
+</body>
 
 
 </html>

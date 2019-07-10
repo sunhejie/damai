@@ -75,15 +75,24 @@
             <div data-v-923b9f90="" class="flex1">
                 <div data-v-923b9f90="" class="hd">
                     <div data-v-923b9f90="" class="cont">
-                        <div data-v-923b9f90="" class="cover">
-                            <!----><img alt="" class="poster" src="" lazy="loaded"></div>
+                        <div data-v-923b9f90="" class="cover" style="position: relative;">
+                            <div class="spic" style="width: 300px;height: 400px; float: left;z-index:999;position: absolute;left:-330px;top:-50px">
+                                <img alt="" class="poster" src="" lazy="loaded">
+                                <!-- smallpic -->
+                                <div class="sf" style="position: absolute;top:40px"></div>
+                            </div>
+                            <div class="bf" style=" width: 300px;height: 400px; float: left;z-index:999;position: absolute;left:0px;top:0px ">
+                                <img alt="" class="bpic" src="" lazy="loaded">
+                            </div>
+
+                        </div>
                         <div data-v-923b9f90="" class="order">
-                            <div data-v-923b9f90="" class="title">【成都】“UNINE FAN MEETING TOUR ‘RUN TO U’”全国巡回见面会Ending场</div>
+                            <div data-v-923b9f90="" class="title"></div>
                             <!---->
                             <div data-v-923b9f90="" data-spm="projectinfo" class="address">
-                                <div class="time">时间：2019.07.27 周六 19:30</div>
+                                <div class="time"></div>
                                 <div class="place">
-                                    <div class="addr">场馆：成都 | 五粮液成都金融城演艺中心</div>
+                                    <div class="addr"></div>
                                     <a data-spm="daddress" href="" target="_blank" class="mapicon"></a>
                                 </div>
                             </div>
@@ -98,7 +107,7 @@
 
                                 </div>
                                 <div class="perform__order__select perform__order__select__performs">
-                                    <div class="select_left" data-spm-anchor-id="a2oeg.project.projectinfo.i1.399b6409ZMcWSC">场次</div>
+                                    <div class="select_left" data-spm-anchor-id="a2oeg.project.projectinfo.i1.399b6409ZMcWSC">票档</div>
                                     <div class="select_right">
                                         <div class="select_right_list">
                                             <div class="select_right_list_item active">
@@ -106,36 +115,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="perform__desc__info">
-                                    <p></p>
+                                <div id="linkbox">
+                                    <h4>商品添加成功</h4>
+                                    <a href="cart.html">购物车列表页面</a>
+                                    <a href="javascript:history.go(0)">继续购物</a>
+                                    <span class="xxx">X</span>
                                 </div>
-                                <div class="perform__order__select1">
-                                    <div class="select_left">票档</div>
-                                    <div class="select_right">
-                                        <div class="select_right_list">
-                                            <div class="select_right_list_item sku_item">
-                                                <div class="skuname">499元</div>
-                                            </div>
-                                            <div class="select_right_list_item sku_item active">
-                                                <!---->
-                                                <div class="skuname">599元</div>
-                                            </div>
-                                            <div class="select_right_list_item sku_item">
-                                                <!---->
-                                                <div class="skuname">799元</div>
-                                            </div>
 
-                                            <!---->
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="perform__order__price">
                                     <div class="number_left">数量</div>
                                     <div class="number_right">
                                         <div class="number_right_info">
                                             <div data-v-1bfbfb02="" class="cafe-c-input-number">
-                                                <!----><a data-v-1bfbfb02="" class="cafe-c-input-number-handler cafe-c-input-number-handler-down cafe-c-input-number-handler-disabled">-</a>
-                                                <div data-v-1bfbfb02="" class="cafe-c-input-number-input-wrap"><input data-v-1bfbfb02="" autocomplete="off" spellcheck="false" placeholder="" class="cafe-c-input-number-input"></div> <a data-v-1bfbfb02="" class="cafe-c-input-number-handler cafe-c-input-number-handler-up">+</a></div>
+                                                <a data-v-1bfbfb02="" class="cafe-c-input-number-handler cafe-c-input-number-handler-down cafe-c-input-number-handler-disabled">-</a>
+                                                <div data-v-1bfbfb02="" class="cafe-c-input-number-input-wrap">
+                                                    <input data-v-1bfbfb02 class="cafe-c-input-number-input" placeholder="1"></input>
+                                                </div>
+                                                <a data-v-1bfbfb02="" class="cafe-c-input-number-handler cafe-c-input-number-handler-up">+</a></div>
                                         </div>
                                         <span class="number_right_limit">每笔订单限购4张</span></div>
                                 </div>
@@ -145,7 +141,7 @@
                                 <!---->
                                 <div class="perform__order__price">
                                     <div class="number_left" data-spm-anchor-id="a2oeg.project.projectinfo.i0.399b6409ZMcWSC">合计</div>
-                                    <div class="number_right"><span class="totol__price"><i>￥</i>599.00</span>
+                                    <div class="number_right"><span class="totol__price"><i>￥</i><b>599.00</b></span>
                                         <!----><span class="totle__offer go__login">登录后查看是否享受优惠</span></div>
                                 </div>
                                 <!---->
@@ -153,6 +149,8 @@
                                     <div data-spm="dbuy" class="buybtn">立即购买</div>
                                     <!---->
                                 </div>
+
+
                                 <!---->
                                 <!---->
                             </div>
@@ -477,6 +475,7 @@
     </div>
 
     <script src="./script/thirdplugins/jquery.js"></script>
+    <script src="./script/thirdplugins/jquery.cookie.js"></script>
     <script src="./script/js/details.js"></script>
 
 </body>

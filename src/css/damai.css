@@ -540,11 +540,13 @@ ul {
     padding: 0
 }
 
+
+/* 
 input {
     border: none;
     -moz-appearance: none;
     -webkit-appearance: none
-}
+} */
 
 button {
     border: none;
