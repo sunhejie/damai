@@ -4,7 +4,8 @@ body .next-btn {
     border: 1px solid #ff1268;
     height: 40px;
     padding: 0 20px;
-    border-radius: 3px
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 body .next-dialog-body .next-form-item.next-large {

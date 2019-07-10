@@ -64,5 +64,21 @@
 
         }
     });
+    //全选
 
+    $('.allsel').on('change', function() {
+        $('.goods-item:visible').find(':checkbox').prop('checked', $(this).prop('checked'));
+        $('.allsel').prop('checked', $(this).prop('checked'));
+        priceall(); //取消选项，重算总和。
+    });
+
+    var $inputs = $('.goods-item:visible').find(':checkbox');
+    $('.item-list').on('change', $inputs, function() { //事件的委托的this指向被委托的元素
+        if ($('.goods-item:visible').find('input:checkbox').length == $('.goods-item:visible').find('input:checked').size()) {
+            $('.allsel').prop('checked', true);
+        } else {
+            $('.allsel').prop('checked', false);
+        }
+        priceall(); //取消选项，重算总和。
+    });
 }()

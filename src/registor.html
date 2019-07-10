@@ -5,7 +5,7 @@
     <meta name="spm-id" content="a211mg.12805697">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" href="../src/img/TB1RxAHSmrqK1RjSZK9XXXyypXa-16-16.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="../src/img/TB1RxAHSmrqK1RjSZK9XXXyypXa-16-16.ico" type="image/x-icon"> -->
 
     <title>大麦PC注册</title>
     <link rel="stylesheet" href="../src/css/pc.css" />
@@ -31,7 +31,7 @@
         <div class="pcbar">
             <div class="pcbar__bd w1200">
                 <a href="../src/index.html" class="pcbar__bd__logo">
-                    <img src="../src/img/loge.png">
+                    <img src="../src/img1/loge.png">
                 </a>
                 <a href="javascript:;" target="_blank" class="pcbar__bd__btn">English</a>
             </div>
@@ -42,13 +42,13 @@
         <div id="container">
             <div>
                 <div id="root_1">
-                    <form action="reg.php" method="post" id="form1">
-                        <p><label for="">*手 机 号：</label><input type="text" name="username"></p>
-                        <p><label for="">*输入密码：</label><input type="password" name="password"></p>
-                        <p><label for="">*确认密码：</label><input type="text" name="email"></p>
+                    <form action="../php/reg.php" method="post" id="form1">
+                        <p><label for="">*手 机 号：</label><input type="text" name="username" id="user" autofocus><span id="tel"></span></p>
+                        <p><label for="">*输入密码：</label><input type="password" name="password" id="pass"><span id="pas"></span></p>
+                        <p><label for="">*确认密码：</label><input type="password" name="password" id="passsure"><span id="sure"></span></p>
 
-                        <p><input type="checkbox" aria-checked="false" class="next-checkbox-input">我已阅读并同意<a href="https://sale.damai.cn/contents/4677/13574.html" target="_blank">《会员协议》</a>和<a href="https://sale.damai.cn/contents/4677/13572.html" target="_blank">《隐私权条款》</a></p>
-                        <p style="padding-left: 100px;color: #fff"><button type="button" class="next-btn next-large next-btn-primary">同意并注册</button> </p>
+                        <p style="height: 50px"></p>
+                        <p style="padding-left: 100px;color: #fff"><button type="button" class="next-btn next-large next-btn-primary submit" id="btn" style="cursor: pointer">同意并注册</button> </p>
                     </form>
 
                 </div>
@@ -96,10 +96,10 @@
                 <div class="footer__ft">
                     <div class="footer__ft_fl">
                         <a href="//www.damai.cn/?spm=a2o6e.home.0.0.591b48d3QzpG8B" target="_blank" class="footer__ft__logo">
-                            <img src="../src/img/bigloge.png">
+                            <img src="../src/img1/bigloge.png">
                         </a>
                         <div class="footer__ft__code__box">
-                            <img class="footer__ft__code" src="../src/img/erweima.jpg" alt="">
+                            <img class="footer__ft__code" src="../src/img1/erweima.jpg" alt="">
                             <span>APP下载</span>
                         </div>
                     </div>
@@ -136,20 +136,20 @@
                         </ul>
                         <div class="footer__ft__img">
                             <a href="javascript:;" target="_blank">
-                                <img style="cursor:pointer;cursor:hand" class="footer__ft__img1" src="../src/img/1.gif" onclick="verifySeal();" alt="SSL site seal - click to verify" data-spm-anchor-id="a2o6e.home.0.i1.5b4d48d3mVzb2Z">
+                                <img style="cursor:pointer;cursor:hand" class="footer__ft__img1" src="../src/img1/1.gif" onclick="verifySeal();" alt="SSL site seal - click to verify" data-spm-anchor-id="a2o6e.home.0.i1.5b4d48d3mVzb2Z">
                             </a>
                             <a rel="nofollow" title="电子营业执照" target="_blank" href="javascript:;">
-                                <img class="footer__ft__img2" alt="" src="../src/img/2.png">
+                                <img class="footer__ft__img2" alt="" src="../src/img1/2.png">
                             </a>
 
                             <a rel="nofollow" target="_blank" href="javascript:;">
-                                <img src="../src/img/3.png" class="footer__ft__img3">
+                                <img src="../src/img1/3.png" class="footer__ft__img3">
                             </a>
                             <a rel="nofollow" target="_blank" href="javascript:;">
-                                <img src="../src/img/4.png" class="footer__ft__img4w">
+                                <img src="../src/img1/4.png" class="footer__ft__img4w">
                             </a>
                             <a target="_blank" href="javascript:;" id="___szfw_logo___">
-                                <img class="footer__ft__img4" src="../src/img/5.png">
+                                <img class="footer__ft__img4" src="../src/img1/5.png">
                             </a>
                         </div>
                     </div>
@@ -157,6 +157,9 @@
             </div>
         </div>
         <!-- 底部结束 -->
+        <script src="./script/thirdplugins/jquery.js"></script>
+        <script src="./script/js/reg.js">
+        </script>
     </body>
 
 </html>
