@@ -7,7 +7,7 @@
             $.each(data, function(index, value) {
 
                 if (id == value.sid) { //遍历判断sid和传入的sid是否相同，方便将那条数据设置到渲染的商品列表中。
-                    console.log(count)
+                    // console.log(count)
                     var $clonebox = $('#component').clone(true, true);
                     // console.log($clonebox.html())
                     $clonebox.find('.next-col .project-name-img').find('img').attr('src', value.url);
@@ -65,20 +65,14 @@
         }
     });
     //全选
+    // var $inputs = $('list-container').find(':checkbox');
+    // console.log($inputs)
+    // $('#checkboxa').on('change', $inputs, function() { //事件的委托的this指向被委托的元素
+    //     if ($inputs.length == $('.allsel').find('input:checked').size()) {
+    //         $('.allsel').prop('checked', true);
+    //     } else {
+    //         $('.allsel').prop('checked', false);
+    //     }
+    // });
 
-    $('.allsel').on('change', function() {
-        $('.goods-item:visible').find(':checkbox').prop('checked', $(this).prop('checked'));
-        $('.allsel').prop('checked', $(this).prop('checked'));
-        priceall(); //取消选项，重算总和。
-    });
-
-    var $inputs = $('.goods-item:visible').find(':checkbox');
-    $('.item-list').on('change', $inputs, function() { //事件的委托的this指向被委托的元素
-        if ($('.goods-item:visible').find('input:checkbox').length == $('.goods-item:visible').find('input:checked').size()) {
-            $('.allsel').prop('checked', true);
-        } else {
-            $('.allsel').prop('checked', false);
-        }
-        priceall(); //取消选项，重算总和。
-    });
 }()

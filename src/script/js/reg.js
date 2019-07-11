@@ -30,11 +30,11 @@
                         // console.log(data)
                         if (data.msg) {
                             $errorinfo.html(data.s)
-                            usernameflag = true;
+                            usernameflag = false;
 
                         } else {
                             $errorinfo.html(data.s)
-                            usernameflag = false
+                            usernameflag = true
                         }
                     });
 
@@ -82,10 +82,12 @@
 
     //2.点击提交注册按钮将数据提交到数据库
     $submit.on('click', function() {
-        // if (!usernameflag || !passflag || !maflag) {
-        //     $username.focus(); //input获得焦点
-        //     return false;
-        //}
+        if (!(usernameflag && passflag && maflag)) {
+            $username.focus(); //input获得焦点
+            return false;
+        } else {
+            alert('注册成功')
+        }
     })
 
 }()

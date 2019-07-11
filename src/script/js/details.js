@@ -65,6 +65,7 @@
                 let $dpric = ($(this).find('.price').html()); //单价
                 let $pric = $dpric * $num;
                 $('.totol__price b').html($pric);
+
             });
 
         });
@@ -79,7 +80,7 @@
             if ($num > 1) {
                 $up.removeClass('cafe-c-input-number-handler-disabled');
                 $num--;
-                // $('.totol__price b').html($pri);
+
                 $input.attr('placeholder', $num);
             } else {
                 $down.addClass('cafe-c-input-number-handler-disabled');
@@ -87,10 +88,14 @@
                 $input.attr('placeholder', $num);
             }
         })
-        $up.on('click', function(e) {
-
+        $up.on('click', function() {
+                console.log($('.active').find('.price').html())
                 $num++;
-                // $('.totol__price b').html($pri);
+                //let $nu = ($('.cafe-c-input-number-input').attr('placeholder')); //数量
+                //  let $dpri = ($('.sku_item .active').find('.price').html()); //单价
+
+                // let $pr = $dpri * $nu;
+                // $('.totol__price b').html($pr);
                 if ($num > 4) {
                     $up.addClass('cafe-c-input-number-handler-disabled');
                     $num = 4;
@@ -104,28 +109,43 @@
 
             })
             //放大镜
-            //3.放大镜效果
-            ! function() {
-
-                $('.sf').width($('.spic').width() * $('.bf').width() / $('.bpic').width());
-                $('.sf').height($('.spic').height() * $('.bf').height() / $('.bpic').height());
-                var bili = $('.bpic').width() / $('.spic').width();
-                $('.spic').hover(function() {
-                        $('.sf').css('visibility', 'visible');
-                        $('.bf').css('visibility', 'visible');
-                        $(this).on('mousemove', function(ev) {
 
 
-                        });
-                    },
-                    function() {
-                        $('.sf').css('visibility', 'hidden');
-                        $('.bf').css('visibility', 'hidden');
+        ! function() {
+
+            $('.sf').width($('.spic').width() * $('.bf').width() / $('.bpic').width());
+            $('.sf').height($('.spic').height() * $('.bf').height() / $('.bpic').height());
+            var bili = $('.bpic').width() / $('.spic').width();
+            $('.spic').hover(function() {
+                    $('.sf').css('visibility', 'visible');
+                    $('.bf').css('visibility', 'visible');
+                    $(this).on('mousemove', function(ev) {
+                        var $left = ev.pageX - $('.poster').offset().left - $('.sf').width() / 2;
+                        var $top = ev.pageY - $('.poster').offset().top - $('.sf').height() / 2;
+                        if ($left < 0) {
+                            $left = 0;
+                        } else if ($left >= $('.spic').width() - $('.sf').width()) {
+                            $left = $('.spic').width() - $('.sf').width();
+                        }
+                        if ($top < 0) {
+                            $top = 0;
+                        } else if ($top >= $('.spic').height() - $('.sf').height()) {
+                            $top = $('.spic').height() - $('.sf').height();
+                        }
+                        $('.sf').css('left', $left);
+                        $('.sf').css('top', $top);
+                        $('.bpic').css('left', -$left * bili);
+                        $('.bpic').css('top', -$top * bili);
                     });
+                },
+                function() {
+                    $('.sf').css('visibility', 'hidden');
+                    $('.bf').css('visibility', 'hidden');
+                });
 
 
 
-            }();
+        }();
     }();
     //加入购物车
     var $arrid = [];

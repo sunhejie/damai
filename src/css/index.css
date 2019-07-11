@@ -5315,8 +5315,6 @@ img {
 }
 
 .poster {
-    left: 30px;
-    top: 40px;
     width: 270px;
     height: 360px
 }
@@ -7403,7 +7401,8 @@ img {
     background: orange;
     opacity: 0.3;
     position: absolute;
-    left: 30px;
+    top: 0px;
+    left: 0px;
     visibility: hidden;
 }
 

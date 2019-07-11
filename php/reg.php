@@ -12,14 +12,10 @@ if(isset($_POST['name'])){
     }
 }
 
-
-
-if(isset($_POST['submit'])){
+if(isset($_POST['username'])){
     $username=$_POST['username'];
     $password=sha1($_POST['password']);
-    echo $username;
-    $query="insert user(sid,tel,password,regdate) values(null,'$user','$pass',NOW())";
-    mysql_query($query);
-    
-    header('http://10.31.158.15/damai/src/registor.html');
+    $conn->query("insert user values(null,'$username','$password',NOW())");
+    header('location:http://10.31.158.15/damai/src/login.html');
+   
 }
