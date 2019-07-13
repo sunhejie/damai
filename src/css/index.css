@@ -7426,6 +7426,7 @@ img {
     width: 200px;
     height: 110px;
     border: 1px solid #ccc;
+    border-radius: 8px;
     position: absolute;
     left: 50%;
     top: 50%;

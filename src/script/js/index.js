@@ -1,24 +1,22 @@
 //懒加载
+$(function() { //和拼接的元素放在一起。
+    $(".itemimg img").lazyload({
+        effect: "fadeIn" //图片显示方式
+    });
+});
+//渲染
 ! function() {
-    let $lazy = $('.lazy');
-    //console.log($lazy)
-    let $pagetop = $(window).height();
-    $(window).on('scroll', function() {
-        $lazy.each(function() {
-            let $scrolltop = $(window).scrollTop();
-            if (($pagetop + $scrolltop) > $lazy.offset().top) {
-                ! function() {
 
-                    let $boxright = $('.box-right');
-                    $.ajax({
-                        url: 'http://10.31.158.15/damai/php/damaidata.php',
-                        dataType: 'json'
-                    }).done(function(data) {
-                        console.log(data);
-                        var $boxcontent = '';
+    let $boxright = $('#box-right');
+    $.ajax({
+        url: 'http://10.31.158.15/damai/php/damaidata.php',
+        dataType: 'json'
+    }).done(function(data) {
+        // console.log(data);
+        var $boxcontent = '';
 
-                        $.each(data, function(index, value) {
-                            $boxcontent += `
+        $.each(data, function(index, value) {
+            $boxcontent += `
                             
                         <a href="details.html?id=${value.sid}" class="box-right__item" data-spm="ditem_1" target="_blank">
                             <div class="itemimg">
@@ -32,41 +30,6 @@
                             </div>
                         </a>				
                         `;
-                        });
-                        $boxright.html($boxcontent);
-                    });
-                }();
-                $('img').attr('src', $('img').attr('_src'))
-            }
-        })
-    })
-}()
-
-// 首页渲染
-! function() {
-
-    let $boxright = $('.box-rightge');
-    $.ajax({
-        url: 'http://10.31.158.15/damai/php/damaigeju.php',
-        dataType: 'json'
-    }).done(function(data) {
-        //console.log(data);
-        var $boxcontent = '';
-
-        $.each(data, function(index, value) {
-            $boxcontent += `
-<a href="details.html?id=${value.sid}" class="box-right__item" data-spm="ditem_1" target="_blank">
-    <div class="itemimg">
-        <img src="${value.url}" class="lazy">
-    </div>
-    <div class="iteminfo">
-        <div class="title" title=${value.titile}>${value.titile}</div>
-        <div class="venue">${value.dizhi}</div>
-        <div class="showtime">2019.07.28 周日 19:30</div>
-        <div class="price">${value.price}<span>起</span></div>
-    </div>
-</a>				
-`;
         });
         $boxright.html($boxcontent);
     });
@@ -87,7 +50,7 @@
             $loutinav.hide();
         }
         //触发滚动条事件
-        $louceng.each(function(index, element) { //遍历楼层
+        $louceng.each(function(index, element) {
             let $loucengtop = $louceng.eq(index).offset().top + $(element).height() / 2;
             if ($loucengtop >= $scrolltop) {
                 $('#loutinav li').not('.last').removeClass('active');
@@ -104,7 +67,6 @@
             $('html,body').animate({
                 scrollTop: $loucenttop
             });
-
         });
 
         //返回顶部

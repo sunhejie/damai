@@ -65,50 +65,49 @@
                 let $dpric = ($(this).find('.price').html()); //单价
                 let $pric = $dpric * $num;
                 $('.totol__price b').html($pric);
+                //数量加减 改变价格
+                let $down = $('.cafe-c-input-number-handler-down');
+                let $up = $('.cafe-c-input-number-handler-up');
+                let $input = $('.cafe-c-input-number-input');
+                //let $num = 1;
+                //let $nu = $('.cafe-c-input-number-input').attr('placeholder'); //数量
+                // let $pri = $('.select_right .select_right_list .sku_item').find('.price').html() * $nu;
+                $down.on('click', function() {
+                    if ($num > 1) {
+                        $up.removeClass('cafe-c-input-number-handler-disabled');
+                        $num--;
+                        $('.totol__price b').html($dpric * $num);
+                        $input.attr('placeholder', $num);
+                    } else {
+                        $down.addClass('cafe-c-input-number-handler-disabled');
+                        $num = 1;
+                        $input.attr('placeholder', $num);
+                    }
+                })
+                $up.on('click', function() {
+                    console.log($('.active').find('.price').html())
+                    $num++;
+                    console.log($num)
+                    $('.totol__price b').html($dpric * $num);
+                    if ($num > 4) {
+                        $up.addClass('cafe-c-input-number-handler-disabled');
+                        $num = 4;
+
+                    } else {
+                        $down.removeClass('cafe-c-input-number-handler-disabled');
+                        $input.attr('placeholder', $num);
+
+                    }
+
+
+
+                })
 
             });
 
         });
-        //数量加减 改变价格
-        let $down = $('.cafe-c-input-number-handler-down');
-        let $up = $('.cafe-c-input-number-handler-up');
-        let $input = $('.cafe-c-input-number-input');
-        let $num = 1;
-        let $nu = $('.cafe-c-input-number-input').attr('placeholder'); //数量
-        let $pri = $('.select_right .select_right_list .sku_item').find('.price').html() * $nu;
-        $down.on('click', function() {
-            if ($num > 1) {
-                $up.removeClass('cafe-c-input-number-handler-disabled');
-                $num--;
 
-                $input.attr('placeholder', $num);
-            } else {
-                $down.addClass('cafe-c-input-number-handler-disabled');
-                $num = 1;
-                $input.attr('placeholder', $num);
-            }
-        })
-        $up.on('click', function() {
-                console.log($('.active').find('.price').html())
-                $num++;
-                //let $nu = ($('.cafe-c-input-number-input').attr('placeholder')); //数量
-                //  let $dpri = ($('.sku_item .active').find('.price').html()); //单价
-
-                // let $pr = $dpri * $nu;
-                // $('.totol__price b').html($pr);
-                if ($num > 4) {
-                    $up.addClass('cafe-c-input-number-handler-disabled');
-                    $num = 4;
-                } else {
-                    $down.removeClass('cafe-c-input-number-handler-disabled');
-                    $input.attr('placeholder', $num);
-
-                }
-
-
-
-            })
-            //放大镜
+        //放大镜
 
 
         ! function() {
@@ -159,34 +158,34 @@
             $arrpic = $.cookie('cookiepic').split(',');
         }
     }
-    $('.buybtn').on('click', function() {
 
+    $('.buybtn').on('click', function() {
         let $sid = $(this).parents('.cont').find('.poster').attr('sid');
         cookietoarr();
         if ($.inArray($sid, $arrid) !== -1) { //存在
-
             var num = parseInt($arrnum[$.inArray($sid, $arrid)]) + parseInt($('.cafe-c-input-number-input').attr('placeholder'));
             $arrnum[$.inArray($sid, $arrid)] = num;
-            $.cookie('cookienum', $arrnum.toString(), 10);
-
+            $.cookie('cookienum', $arrnum.toString(), { expires: 7 });
+            console.log(1)
+            console.log(2)
             var pic = parseInt($arrpic[$.inArray($sid, $arrid)]) + parseInt($('.totol__price b').html());
             $arrpic[$.inArray($sid, $arrid)] = pic;
-            $.cookie('cookiepic', $arrpic.toString(), 10);
+            $.cookie('cookiepic', $arrpic.toString(), { expires: 7 });
 
         } else { //不存在
             $arrid.push($sid);
-            $.cookie('cookiesid', $arrid.toString(), 7);
+            $.cookie('cookiesid', $arrid.toString(), { expires: 7 });
 
             $arrnum.push($('.cafe-c-input-number-input').attr('placeholder'));
-            $.cookie('cookienum', $arrnum.toString(), 7);
+            $.cookie('cookienum', $arrnum.toString(), { expires: 7 });
 
             $arrpic.push($('.totol__price b').html());
-            $.cookie('cookiepic', $arrpic.toString(), 7);
+            $.cookie('cookiepic', $arrpic.toString(), { expires: 7 });
         }
-        $('#linkbox').css({ display: 'block' });
-        $('#linkbox .xxx').on('click', function() {
-            $('#linkbox').css({ display: 'none' })
-        })
+        if (confirm('前往订单页')) {
+            location.href = 'cart.html'
+        }
+
     })
 
 }()
