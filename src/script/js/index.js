@@ -1,9 +1,3 @@
-//懒加载
-$(function() { //和拼接的元素放在一起。
-    $(".itemimg img").lazyload({
-        effect: "fadeIn" //图片显示方式
-    });
-});
 //渲染
 ! function() {
 
@@ -12,7 +6,7 @@ $(function() { //和拼接的元素放在一起。
         url: 'http://10.31.158.15/damai/php/damaidata.php',
         dataType: 'json'
     }).done(function(data) {
-        // console.log(data);
+
         var $boxcontent = '';
 
         $.each(data, function(index, value) {
@@ -136,15 +130,7 @@ $(function() { //和拼接的元素放在一起。
         }, 2000);
     });
 }()
-// tab切换
-! function() {
 
-    $('#tab .tab_title li').on('click', function() {
-        $(this).addClass('active').siblings().removeClass('active');
-        $('#tab .tab_content .item').eq($(this).index()).addClass('show123').siblings().removeClass('show123');
-    })
-
-}();
 
 // 二级效果 “全国”
 ;
@@ -154,3 +140,11 @@ $(function() { //和拼接的元素放在一起。
     $guo.hover(function() { $city.show() }, function() { $city.hide() })
 
 }();
+//懒加载 
+! function() {
+    $(function() { //和拼接的元素放在一起。
+        $(".itemimg img").lazyload({
+            effect: "fadeIn" //图片显示方式
+        });
+    });
+}()
